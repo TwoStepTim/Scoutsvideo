@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --colorSecond : #4e7e3e;
+    --colormain: #c0932a;
+}
+body{
+    background-color: #e0d9c8;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    overflow-x: hidden;    
+    color: rgb(45, 45, 45);
+}
+h1{
+    color: var(--colormain);
+}
+h2{
+    color: var(--colorSecond);
+}
+h3{
+    color: var(--colormain);
+}
+h5{ 
+    color: var(--colormain);
+}
+h4{
+    color: var(--colorSecond);
+}
+.link-custom {
+    color: var(--colorSecond);
+    font-weight: 700;
+    font-style: normal;
+}
+a{
+    color:#4e3601; 
+    font-weight: 700;
+    font-style: italic;
+}
+.custom-btn {
+    background-color: #855c02;
+    color: #e0d9c8;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-btn:hover {
+    background-color: #e0d9c8;
+    color: #855c02;
+}
+.nav-link{
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+/* Custom styles to ensure links do not grey out */
+.navbar-dark .navbar-nav .nav-link:visited, .navbar-dark .navbar-nav .nav-link.active {
+    color: #c0932a(255, 255, 255, 0.75) /* Or any color you prefer */
+
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #ebe2cd; /* Change link color here */
+    font-size: 20px;
+}
+  
+.dropdown-menu{
+    background-color: #4e7e3e  ;
+
+}
+.dropdown-item{
+    color: #ebe2cd;
+    margin-bottom: 10px;
+}
+/* Optional: Adjusting hover color for better visibility */
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #c0932a; /* Brighter color on hover */
+}
+.navbar-dark {
+    background-color: #4e7e3e  !important; /* Change background color here */
+}
+
+.show-more-btn{
+    margin-bottom: 20px;
+}
+
+.Three-column{
+    text-align: center;
+}
+
+.link-img{
+    margin-bottom: 50px;
+}
+
+.bio-Headers{
+    text-align: center;
+}
+.bios{
+    margin-bottom: 20px;
+}
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e0d9c8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it appears above other content */
+  }
+  
+  .preloader img {
+    width: 150px; /* Adjust the width of your logo as needed */
+    height: auto;
+  }
+  
+  /* Animation for bouncing effect */
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .preloader img {
+    animation: bounce 2s ease infinite;
+  }
+  
+  /* Hide the preloader when content is loaded */
+  body.loaded .preloader {
+    display: none;
+  }
+
+  .Activities{
+    padding: 10px;
+    border-radius: 50px;
+    border-color: transparent;
+    background-color: #e8ca89;
+    margin-top: 50px;
+  }
+
+  .Activities h2{
+    text-align: center;
+  }
+
+  @media (max-width: 700px) {
+    .bbvideo {
+      width: 90vw !important;
+    }
+  }
